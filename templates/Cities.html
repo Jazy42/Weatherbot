@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %} Cities {% endblock %}
+{%block content %}
+
+<td>
+
+<table  class="table-sm " class="table-hover">
+    <thead class="thead-dark">
+        <td><h6>City Id</h6></td>
+        <td><h6>City name</h6></td>
+        <td><h6>URL</h6></td>
+        <td ><h6>Action</h6></td>
+    </thead>
+
+</td>
+    {%for r in Citydata %}
+
+    <tr>
+        <td><h6>{{r[0]}}</h6></td>
+        <td><h6>{{r[1]}}</h6></td>
+        <td><h6>{{r[2]}}</h6></td>
+        <td><a href="{{url_for('update')}}" class="btn btn-primary" role="button">Edit</a><a href="{{url_for('deleterecord')}}" class="btn btn-warning role="button" >Delete</a></td>
+
+
+
+    </tr>
+            {%endfor%}
+
+
+</table>
+
+{%endblock%}
+
+

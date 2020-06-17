@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %} Edit {% endblock %}
+{%block content %}
+<html>
+<head>
+    <title>Edit record</title>
+</head>
+
+     <div  class="mx-auto" style="width: 200px;">
+    <h3>Edit Record </h3>
+</div>
+<div class="container">
+    <form role="form" >
+        <div class="form-group" >
+            <div  class = "col-md-6 offset-3 p-3 mt-5">
+                <label for="cityid" class="control-label">Enter ID</label>
+                <input type="integer" class="form-control" name="id" id="cityid">
+             </div>
+               <div  class = "col-md-6 offset-3 p-3 ">
+                <label for="cityname" class="control-label">Enter City name</label>
+                <input type="text" class="form-control" name="cityname" id="cityname">
+             </div>
+                <div  class = "col-md-6 offset-3 p-3 ">
+                <label for="url" class="control-label">Enter URL</label>
+                <input type="URL" class="form-control" name="url" id="url">
+             </div>
+            <button type="button" class="btn btn-success col-md-2 offset-5 mt-2">Submit</button>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+{% endblock %}

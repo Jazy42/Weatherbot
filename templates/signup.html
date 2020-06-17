@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+
+            <!--<form action="#" method="POST">-->
+<!--    <p>Enter City name:</p>-->
+<!--    <p><input type="text" name="cityname"/></p>-->
+<!--    <p>Enter URL</p>-->
+<!--    <p><input type ="URL" name="url"/></p>-->
+<!--    <p><input type="submit" value = "submit"/>-->
+
+
+<!--</form>-->
+
+
+<form action="#" method="POST">
+    <div class='container'>
+
+    <div class="form-group">
+        <div role="form" >
+
+             <div class="col-md-6 offset-3">
+                <label for="cityname" class="control-label">City</label>
+                <input type="text" class="form-control" name="city" id="cityname" placeholder="Enter City name">
+            </div>
+            <div class="col-md-6 offset-3">
+            <label for="url" class="control-label">URL</label>
+            <input type="url" class="form-control" name="city" id="url" placeholder="Enter URL">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success col-md-2 offset-5">Submit</button>
+    </div>
+        </div>
+    </div>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}

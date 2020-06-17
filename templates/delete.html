@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %} Forecast {% endblock %}
+{%block content %}
+
+
+<html>
+<head>
+    <title>Delete record</title>
+</head>
+<div>
+    <div  class="mx-auto" style="width: 200px;">
+    <h3>Remove Record </h3>
+</div>
+<form action="/deleterecord" method="post">
+<div  class = "col-md-6 offset-3 mt-5 ">
+                <label for="cityid" class="control-label">Enter City ID</label>
+                <input type="integer" class="form-control" name="cityid" id="cityid">
+                <button type="button" class="btn btn-success col-md-2 offset-5 mt-2">Submit</button>
+
+             </div>
+
+
+
+    </div>
+
+</form>
+</body>
+</html>
+{% endblock %}
